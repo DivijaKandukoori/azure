@@ -1,11 +1,7 @@
-FROM gpgtest-a-docker.jfrog.io/hello-world
+FROM gpgtest.jfrog.io/a-docker/alpine
 
-LABEL maintainer="Azure App Services Container Images <appsvc-images@microsoft.com>"
 
-ENV PORT 8080
-EXPOSE 80
+CMD ["echo", "Hello StackOverflow!"]
 
-# Create app directory
-WORKDIR /app
 
 
