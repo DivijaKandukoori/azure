@@ -46,5 +46,5 @@ stages:
           status: 'Released'
           sourceRepo: 'divija-docker-local'
           includeDependencies: false
-          copy: false
+          copy: true
           dryRun: false
