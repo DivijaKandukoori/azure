@@ -1,4 +1,4 @@
-FROM gpgtest.jfrog.io/a-docker/alpine
+FROM gpgtest.jfrog.io/divija-docker/alpine
 
 
 CMD ["echo", "Hello StackOverflow!"]
