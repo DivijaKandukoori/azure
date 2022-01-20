@@ -1,4 +1,4 @@
-FROM gpgtest.jfrog.io/a-docker/node:12.18.1-alpine3.12
+FROM gpgtest.jfrog.io/a-docker/node
 
 LABEL maintainer="Azure App Services Container Images <appsvc-images@microsoft.com>"
 
