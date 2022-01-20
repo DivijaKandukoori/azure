@@ -15,13 +15,13 @@ stages:
         inputs:
           command: 'build'
           Dockerfile: '**/Dockerfile'
-          arguments: '-t gpgtest.jfrog.io/a-docker/testapp:$(Build.BuildId)'
+          arguments: '-t gpgtest.jfrog.io/divija-docker/testapp:$(Build.BuildId)'
       - task: ArtifactoryDocker@1
         inputs:
           command: 'push'
           artifactoryService: 'divija-gpg'
           targetRepo: 'a-docker-local'
-          imageName: 'gpgtest.jfrog.io/a-docker/testapp:$(Build.BuildId)'
+          imageName: 'gpgtest.jfrog.io/divija-docker/testapp:$(Build.BuildId)'
           collectBuildInfo: true
           buildName: '$(Build.DefinitionName)'
           buildNumber: '$(Build.BuildNumber)'
@@ -44,7 +44,7 @@ stages:
           buildNumber: '$(Build.BuildNumber)'
           targetRepo: 'ae-docker-dev-local'
           status: 'Released'
-          sourceRepo: 'a-docker-local'
+          sourceRepo: 'divija-docker-local'
           includeDependencies: false
           copy: false
           dryRun: false
