@@ -44,7 +44,7 @@ stages:
           buildNumber: '$(Build.BuildNumber)'
           targetRepo: 'ae-docker-dev-local'
           status: 'Released'
-          sourceRepo: 'divija-docker-local'
+          sourceRepo: ''divija-docker-local''
           includeDependencies: false
           copy: true
           dryRun: false
