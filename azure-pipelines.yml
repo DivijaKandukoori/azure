@@ -42,9 +42,9 @@ stages:
           artifactoryService: 'divija-gpg'
           buildName: '$(Build.DefinitionName)'
           buildNumber: '$(Build.BuildNumber)'
-          targetRepo: 'ae-docker-dev-local'
+          targetRepo: 'divija-new-local'
           status: 'Released'
           sourceRepo: '''divija-docker-local'''
           includeDependencies: false
-          copy: true
+          copy: false
           dryRun: false
